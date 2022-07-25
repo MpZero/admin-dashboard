@@ -19,6 +19,25 @@ html {
   border: 2px solid red;
 }
 
+.sidebar img {
+  margin-right: 10px;
+}
+
+.sidebar p {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.sidebar-logo {
+/* background-color: red; */
+margin-bottom: 3rem;
+}
+
+.sidebar-settings-container {
+  margin-top: 5rem;
+}
+
 .header {
   grid-area: header;
   border: 2px solid red;
