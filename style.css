@@ -1,11 +1,21 @@
 html {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Lora', serif;
+  font-weight: 700;
 }
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+:root {
+  --bgr-color:#94A3B8;
+  --content-bgr-color: #334155;
+}
+
 .container {
+  background-color: var(--bgr-color);
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 3fr;
@@ -42,6 +52,18 @@ margin-bottom: 3rem;
   grid-area: header;
   border: 2px solid red;
 
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
+}
+
+.search-bar,
+.header-content {
+  border: 2px solid black;
+}
+
+.search-btn::before {
+  content: url(search-24px.png);
 }
 
 .main {
@@ -59,22 +81,24 @@ margin-bottom: 3rem;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
   padding: 10px;
+  border: 2px solid black;
+  
 }
 
 .main-content-container div {
   padding: 10px;
-  background-color: beige;
+  border: 2px solid black;
+  background-color: var(--content-bgr-color);
+
 }
 
 .right-side-container {
   padding: 10px;
+  border: 2px solid black;
+  background-color: var(--content-bgr-color);
 }
 
-.main-right-side {
-  background-color: red;
+.right-side {
   padding: 10px;
-}
-
-.main-right-side > div {
-  background-color: beige;
+border: 2px solid black;
 }
